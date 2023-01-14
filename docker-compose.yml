@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  nginx000ex6:
+    build: ./
+    image: nginx
+    ports:
+      - 80:80
+    restart: always
+    volumes:
+      - ./src:/usr/share/nginx/html
